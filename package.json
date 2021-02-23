@@ -1,0 +1,20 @@
+{
+  "name": "fullstackbot",
+  "version": "1.0.0",
+  "description": "Simple NodeJS telegram bot",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "start:dev": "nodemon index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cron": "^1.8.2",
+    "node-fetch": "^2.6.1",
+    "telebot": "^1.4.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}
