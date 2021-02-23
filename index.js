@@ -9,12 +9,6 @@ const bot = new TeleBot(TELEGRAM_BOT_TOKEN)
 var users = []
 var myId = 288096386
 
-// var job = new CronJob('0/55 * * * * *', function () {
-// 	users.forEach(user => {
-// 		bot.sendMessage(user, 'Xar 55 sekunda boradi')
-// 	})
-// }, null, true)
-
 // start bosilsa ishga tushadi
 bot.on(['/start'], (msg) => {
 	
@@ -24,8 +18,8 @@ bot.on(['/start'], (msg) => {
 
 	msg.reply.text(`Assalomu alaykum ${msg.chat.first_name} ${msg.chat.last_name}, xush kelibsiz!`)
 	
-	// bot.sendMessage(myId, msg.chat.id)
-	// job.start()
 })
+
+// bot.on([])
 
 bot.start()
